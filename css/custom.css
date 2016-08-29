@@ -1,0 +1,7 @@
+body { 
+	background:url('/images/background.jpg');
+	color: #fff;
+}
+.banner {
+	border-radius: 20px;
+}
