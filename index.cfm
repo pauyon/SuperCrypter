@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<style>
+			.container {
+				margin-top: 15%;
+			}
+		</style>
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/custom.css">
 		<script src="/js/jquery-1.12.0.min.js"></script>
@@ -10,27 +15,27 @@
 	<body>
 	<div class="container">
 		<div class="row">
-		<img src="/images/banner.jpg" class="img-responsive banner">
-		<br>
-		<form method="post" enctype="multipart/form-data" >
-			<div class="form-group">
-				<label for="enctype">Encryption Type: </label><br>
-				<label class="radio-inline">
-    			<input type="radio" name="enctype" value="encrypt" checked>Encrypt</label>
-
-  				<label class="radio-inline">
-    			<input type="radio" name="enctype" value="decrypt" >Decrypt</label>
+			<div class="col-lg-12">
+				<form method="post" enctype="multipart/form-data" >
+					<div class="form-group">
+						<label for="enctype">Encryption Type: </label><br>
+						<label class="radio-inline">
+    					<input type="radio" name="enctype" value="encrypt" checked>Encrypt</label>
+		
+  						<label class="radio-inline">
+    					<input type="radio" name="enctype" value="decrypt" >Decrypt</label>
+					</div>
+					<div class="form-group">
+						<label for="newkey">Custom Encryption string (optional): </label>
+						<input type="text" name="newkey" class="form-control" placeholder="Your AES key">
+					</div>
+					<div class="form-group">
+						<label for="msg">Message: </label>
+						<textarea name="msg" class="form-control" required></textarea>
+					</div>
+					<input type="submit" name="submit" class="btn btn-primary" value="Submit">
+				</form>
 			</div>
-			<div class="form-group">
-				<label for="newkey">Custom Encryption string (optional): </label>
-				<input type="text" name="newkey" class="form-control" placeholder="Your AES key">
-			</div>
-			<div class="form-group">
-				<label for="msg">Message: </label>
-				<textarea name="msg" class="form-control" required></textarea>
-			</div>
-			<input type="submit" name="submit" class="btn btn-primary" value="Submit">
-		</form>
 		</div>
 		<br>
 		<div class="row">
